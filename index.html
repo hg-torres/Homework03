@@ -25,33 +25,45 @@
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
     </form>
-    <button class="btn btn-primary container" id = "verifyLength">Im ready</button>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <button class="btn btn-success container" id="verifyLength">Im ready</button>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
     
-    <div id="toggleCollapse" class="collapse ">
-      <form class= "">
+    
+    <div id="toggleCollapse" class="collapse">
+      <form class= "mt-4 mb-4 mx-10">
         <div class="row mx-auto">
-          <div class="col-md-4">
+          <div class="col-lg-3">
             <input type="checkbox" id="lowercase" name="charType1" value="lowercase">
-            <label for="charType1"> Include lowercase</label><br>
+            <label for="charType1"> Include lowercase</label>
+          </div>
+          <div class="col-lg-3">
             <input type="checkbox" id="uppercase" name="charType2" value="uppercase">
             <label for="charType2"> Include uppercase</label><br>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-3">
             <input type="checkbox" id="numbers" name="charType3" value="numeric">
-            <label for="charType3"> Include numbers</label><br>
+            <label for="charType3"> Include numbers</label>
+          </div>
+          <div class="col-lg-3">
             <input type="checkbox" id="specialChar" name="charType4" value="specialChar">
             <label for="charType4"> Include special characters</label>
           </div>
         </div>
       </form>
     
-      <button class = " btn btn-primary"id="myBtn">Generate</button>
-    </div>
+      <button class = " btn btn-primary container"id="myBtn">Generate</button>
 
-    <div class="container mt-3">
-      <div class="card text-center">
-        <div class="card-body" id="passwordTextField"></div>
+      <div class="container-fluid  rounded mt-3">
+        <div class="card bg-light text-dark text-center">
+          <div class="card-body" id="passwordTextField"></div>
+        </div>
       </div>
+
     </div>
 
   </main>
