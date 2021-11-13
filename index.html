@@ -14,14 +14,8 @@
 <body>
 
   <h1 class="d-flex container-fluid p-5 bg-primary text-white bg-gradient justify-content-center">Password Generator</h1>
-  <!-- <p>Click the button to generate a password.</p> -->
 
   <main class="container">
-    <!-- <form class="">
-      <label for="passwordLength">Choose a password length(between 8 and 128) to get started:</label>
-      <input type="number" id="passwordLength" name="passwordLength" min="8" max="128">
-    </form>
-    <button data-bs-toggle="collapse" data-bs-target="#demo">I'm ready!</button> -->
     <form class="was-validated">
       <div class="mb-3">
         <label for="passwordLength" class="form-label">Password Length:</label>
@@ -31,18 +25,18 @@
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
     </form>
-    <button class="btn btn-primary" id = "verifyLength">Im ready</button>
+    <button class="btn btn-primary container" id = "verifyLength">Im ready</button>
     
-    <div id="toggleCollapse" class="collapse">
-      <form>
+    <div id="toggleCollapse" class="collapse ">
+      <form class= "">
         <div class="row mx-auto">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <input type="checkbox" id="lowercase" name="charType1" value="lowercase">
             <label for="charType1"> Include lowercase</label><br>
             <input type="checkbox" id="uppercase" name="charType2" value="uppercase">
             <label for="charType2"> Include uppercase</label><br>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <input type="checkbox" id="numbers" name="charType3" value="numeric">
             <label for="charType3"> Include numbers</label><br>
             <input type="checkbox" id="specialChar" name="charType4" value="specialChar">
@@ -51,12 +45,14 @@
         </div>
       </form>
     
-      <button class = "btn-primary"id="myBtn">Generate</button>
+      <button class = " btn btn-primary"id="myBtn">Generate</button>
     </div>
-    
-    <ul class="list-group">
-      <li class=""id="passwordTextField"></li>
-    </ul>
+
+    <div class="container mt-3">
+      <div class="card text-center">
+        <div class="card-body" id="passwordTextField"></div>
+      </div>
+    </div>
 
   </main>
     

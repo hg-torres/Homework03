@@ -31,19 +31,13 @@ document.getElementById('myBtn').addEventListener('click', event => {
   if ((length < 8) || (length > 128)) {
     alert(`Please enter a value between 8 and 128`)
   } else {
-    let lowercaseConfirm = document.getElementById('lowercase').checked;
-    console.log(lowercaseConfirm);
-    let uppercaseConfirm = document.getElementById('uppercase').checked;
-    console.log(uppercaseConfirm);
-    let numberConfirm = document.getElementById('numbers').checked;
-    console.log(numberConfirm);
-    let specialCharConfirm = document.getElementById('specialChar').checked;
-    console.log(specialCharConfirm);
 
-    console.log((!uppercaseConfirm && !lowercaseConfirm && !numberConfirm && !specialCharConfirm));
+    let lowercaseConfirm = document.getElementById('lowercase').checked;
+    let uppercaseConfirm = document.getElementById('uppercase').checked;
+    let numberConfirm = document.getElementById('numbers').checked;
+    let specialCharConfirm = document.getElementById('specialChar').checked;
 
     if (!uppercaseConfirm && !lowercaseConfirm && !numberConfirm && !specialCharConfirm) {
-
       alert(`Please select at least one criteria for your password.`)
     }
     else {
@@ -62,7 +56,7 @@ document.getElementById('myBtn').addEventListener('click', event => {
       }
     }
   }
-
+  
   let generatedPassword = generatePassword(possible, length)
   document.getElementById('passwordTextField').innerHTML = `
         <p>${generatedPassword}</p>
